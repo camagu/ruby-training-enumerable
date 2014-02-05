@@ -1,13 +1,23 @@
 require 'spec_helper'
 require './lib/phonebook'
+require './lib/contact'
 
 describe Phonebook do
-  let(:contacts)  { [double('first contact'), double('second contact')] }
+  let(:contact_1) { double('contact', name: 'first contact', phone_numbers: '5555555') }
+  let(:contact_2) { double('contact', name: 'second contact', phone_numbers: '6666666') }
+  let(:contacts) { [ contact_1, contact_2 ] }
   let(:phonebook) { Phonebook.new(contacts) }
 
   describe "#contacts" do
     it "returns assigend contacts" do
       expect(phonebook.contacts).to eq(contacts)
     end
+  end
+
+  describe "list_names" do
+	it { expect(phonebook).to respond_to(:list_names) }
+  	it "should return a list with contact names" do
+		expect(phonebook.list_names).to eq(['first contact', 'second contact'])
+  	end
   end
 end
