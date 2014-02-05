@@ -23,4 +23,12 @@ class Phonebook
   	list_phone_numbers
   end
 
+  def list_complete_contacts
+  	# As a client I want a mapping of the phone book contacts' names to their phone numbers so I can display the contact's phone numbers under it's name
+  	list_complete_contacts = Hash.new
+  	@contacts.each do |c|
+	  	list_complete_contacts[c.name] = c.phone_numbers
+  	end
+  	list_complete_contacts
+  end
 end
