@@ -34,4 +34,11 @@ describe Phonebook do
 		expect(phonebook.list_complete_contacts).to eq({c1.name => c1.phone_numbers, c2.name => c2.phone_numbers})
   	end
   end
+
+  describe "complete_contacts?" do
+	it { expect(phonebook).to respond_to(:complete_contacts?) }
+  	it "should return a list with contact phone numbers" do
+		expect(phonebook.complete_contacts?).to be(true)
+  	end
+  end
 end

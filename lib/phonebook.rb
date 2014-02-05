@@ -31,4 +31,14 @@ class Phonebook
   	end
   	list_complete_contacts
   end
+
+  def complete_contacts?
+  	incomplete = 0
+  	@contacts.each do |c|
+	  	if c.phone_numbers.nil? || c.phone_numbers.empty?
+	  		incomplete+=1
+	  	end
+  	end
+  	true unless incomplete > 0
+  end
 end
