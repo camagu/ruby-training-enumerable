@@ -1,11 +1,11 @@
 Ruby Training Exercises: Enumerable
 ===================================
 
-This a set of exercises which will help you practice your Ruby skills. It's
+This a set of exercises which will help you imrpove your Ruby skills. It's
 intended to:
 
-- Learn language basics, specially [Enumerable][enumerable]s
-- Practice [TDD][tdd] using [RSpec][rpec]
+- Learn language basics, specially [Enumerable][enumerable]
+- Practice [TDD][tdd] using [RSpec][rspec]
 - Practice writing clean code
 
 Intended for beginners and intermediate level developers.
@@ -28,7 +28,7 @@ Rules
 
 - Commit and push you're changes after completing each requirement
 - Every completed requirement should include it's corresponding tests
-- Use TDD to develop the requirements
+- Use [TDD][tdd] to develop the requirements
 - Existing classes can be modified but no new classes should be added
 
 Exercises
