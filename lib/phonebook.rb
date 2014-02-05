@@ -41,4 +41,14 @@ class Phonebook
   	end
   	true unless incomplete > 0
   end
+
+  def incomplete_contacts
+  	incomplete_contacts = []
+  	@contacts.each do |c|
+	  	if c.phone_numbers.nil? || c.phone_numbers.empty?
+	  		incomplete_contacts.push(c.name)
+	  	end
+  	end
+  	incomplete_contacts
+  end
 end

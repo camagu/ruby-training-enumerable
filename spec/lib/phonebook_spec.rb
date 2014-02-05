@@ -41,4 +41,13 @@ describe Phonebook do
 		expect(phonebook.complete_contacts?).to be(true)
   	end
   end
+
+  describe "incomplete_contacts" do
+  	let(:c3) { double('contact', name: 'third contact', phone_numbers:'') }
+  	before { contacts.push(c3) }
+	it { expect(phonebook).to respond_to(:incomplete_contacts) }
+  	it "should return a list with contact phone numbers" do
+		expect(phonebook.incomplete_contacts).to eq(['third contact'])
+  	end
+  end
 end
