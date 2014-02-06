@@ -10,13 +10,13 @@ describe Phonebook do
 
   describe "methods" do
     subject{ phonebook }
+    it { should respond_to(:empty?) }
   	it { should respond_to(:contact_names) }
   	it { should respond_to(:contact_phone_numbers) }
   	it { should respond_to(:contact_name_and_phone_numbers) }
   	it { should respond_to(:complete_contacts?) }
   	it { should respond_to(:incomplete_contacts) }    
   end
-
 
   describe "#contacts" do
     it "returns assigend contacts" do
@@ -43,13 +43,13 @@ describe Phonebook do
   end
 
   describe "complete_contacts?" do
-    describe "with complete contacts" do
+    context "with complete contacts" do
       it "returns true" do
         expect(phonebook.complete_contacts?).to be_true
       end      
     end
 
-    describe "with incomplete contacts" do
+    context "with incomplete contacts" do
       let(:contacts) { [contact1, contact2, incomplete] }
       let(:phonebook) { Phonebook.new(contacts) }
       it "returns false" do
@@ -59,13 +59,13 @@ describe Phonebook do
   end
 
   describe "incomplete_contacts" do
-    describe "with complete contacts" do
+    context "with complete contacts" do
       it "returns an empty list " do
         expect(phonebook.incomplete_contacts).to eq([])
       end
     end
 
-    describe "with incomplete contacts" do
+    context "with incomplete contacts" do
       let(:contacts) { [contact1,contact2,incomplete] }
       let(:phonebook) { Phonebook.new(contacts) }
       it "returns a list " do
