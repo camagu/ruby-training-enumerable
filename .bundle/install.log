@@ -1,7 +1,0 @@
-# Logfile created on 2014-02-08 19:08:46 -0500 by logger.rb/36483
-I, [2014-02-08T19:08:46.099960 #1715]  INFO -- : 0:  diff-lcs (1.2.5) from /Library/Ruby/Gems/2.0.0/specifications/diff-lcs-1.2.5.gemspec
-I, [2014-02-08T19:08:46.100799 #1715]  INFO -- : 0:  rspec-core (2.14.7) from /Library/Ruby/Gems/2.0.0/specifications/rspec-core-2.14.7.gemspec
-I, [2014-02-08T19:13:20.805190 #1715]  INFO -- : 0:  rspec-expectations (2.14.5) from /Library/Ruby/Gems/2.0.0/specifications/rspec-expectations-2.14.5.gemspec
-I, [2014-02-08T19:13:23.637206 #1715]  INFO -- : 0:  rspec-mocks (2.14.5) from /Library/Ruby/Gems/2.0.0/specifications/rspec-mocks-2.14.5.gemspec
-I, [2014-02-08T19:13:23.661979 #1715]  INFO -- : 0:  rspec (2.14.1) from /Library/Ruby/Gems/2.0.0/specifications/rspec-2.14.1.gemspec
-I, [2014-02-08T19:13:23.662442 #1715]  INFO -- : 0:  bundler (1.5.0.rc.2) from /Library/Ruby/Gems/2.0.0/specifications/bundler-1.5.0.rc.2.gemspec
