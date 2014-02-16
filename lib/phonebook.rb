@@ -1,4 +1,4 @@
-class contact
+class Phonebook
   attr_reader :contacts
 
   def initialize(contacts)
