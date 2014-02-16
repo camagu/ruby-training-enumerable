@@ -21,11 +21,11 @@
     data
   end
 
-  def every_contact_has_number?
+  def every_contact_has_phone_number?
     contacts.all? { |contact| !contact.phone_numbers.nil?}
   end
 
-  def contacts_with_no_number
+  def contacts_without_phone_number
     contacts.select { |contact| contact.phone_numbers.nil? }
   end
 end
