@@ -9,7 +9,7 @@ class Phonebook
     contacts.map(&:name)
   end
 
-  def contacts_numbers
+  def contacts_phone_numbers
     contacts.map(&:phone_numbers).flatten
   end
 
