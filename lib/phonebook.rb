@@ -2,7 +2,7 @@ class Phonebook
   attr_reader :contacts
 
   def initialize(contacts)
-    contacts = contacts
+    @contacts = contacts
   end
 
   def contacts_names
