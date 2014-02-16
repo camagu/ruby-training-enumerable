@@ -10,7 +10,7 @@
   end
 
   def contacts_numbers
-    contacts.map(&:phone_numbers)
+    contacts.map(&:phone_numbers).flatten
   end
 
   def contacts_info
