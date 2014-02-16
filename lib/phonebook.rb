@@ -26,4 +26,3 @@
   def contacts_without_phone_number
     contacts.select { |contact| contact.phone_numbers.nil? }
   end
-end
