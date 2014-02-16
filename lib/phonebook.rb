@@ -14,11 +14,9 @@
   end
 
   def contacts_info
-    data = Hash.new
-    contacts.map do |contact|
-      data << [contact.name, contact.phone_numbers]
+    contacts.inject({}) do |result, contact|
+      result.merge(contact.name => contact.phone_numbers)
     end
-    data
   end
 
   def every_contact_has_phone_number?
