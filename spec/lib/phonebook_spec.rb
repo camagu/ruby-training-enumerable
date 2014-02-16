@@ -22,7 +22,7 @@ describe Phonebook do
 
   describe "#contact_phone_numbers" do
     it "returns list of contact's numbers" do
-      expect(phonebook.contacts_numbers).to eq([contact1.phone_numbers, contact2.phone_numbers])
+      expect(phonebook.contacts_phone_numbers).to eq([contact1.phone_numbers[0], contact1.phone_numbers[1], contact2.phone_numbers[0]])
     end
   end
 
